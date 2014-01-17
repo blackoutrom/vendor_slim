@@ -69,7 +69,7 @@ fi
 device="$1"
 
 # get current version
-eval $(grep "^BLK_VERSION_" vendor/blackout/config/common.mk | sed 's/ *//g')
+eval $(grep "^BLK_VERSION_" vendor/slim/config/common.mk | sed 's/ *//g')
 VERSION="$PRODUCT_VERSION_MAJOR.$PRODUCT_VERSION_MINOR.$PRODUCT_VERSION_MAINTENANCE"
 
 echo -e ${cya}"Building ${bldgrn}slim ROM ${bldylw}v$VERSION"${txtrst}
